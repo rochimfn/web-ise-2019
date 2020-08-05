@@ -1,0 +1,93 @@
+@font-face {
+    font-family: "Monument Regular";
+    src: url("../fonts/MonumentExtended-Regular.otf");
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+body {
+    height: 100vh;
+    background: radial-gradient(closest-corner, #f94892, #34204e, #271932);
+    background-size: cover;
+    position: relative;
+}
+#text {
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: "Monument Regular", monospace;
+}
+#cloud, #building {
+    background-size: cover;
+    background-position: center top;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);   
+}
+#building {
+    background-image: url(../img/building.png);
+    height: 400px;
+    z-index: 10;
+}
+#cloud {
+    background-image: url(../img/cloud.png);
+    height: 300px;
+    bottom: -20px;
+    z-index: 20;     
+}
+/* Moving Letters */
+ml4 {
+    position: relative;
+    font-weight: 900;
+    font-size: 4.5em;
+}
+.ml4 .letters {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 200px;
+    right: 0;
+    opacity: 0; 
+    z-index: 30;
+}
+/* Media Query */
+@media (min-width: 992px) {
+    br {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    html, body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    html, body {
+        font-size: 12px;
+    }
+    #building {
+        height: 300px;
+    }
+    #cloud {
+        height: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    html, body {
+        font-size: 10px;
+    }
+}

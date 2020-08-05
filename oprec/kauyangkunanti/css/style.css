@@ -1,0 +1,35 @@
+@font-face {
+    font-family:"Monument Regular";
+    src:url("../fonts/MonumentExtended-Regular.otf");
+}
+body {
+    background-image: url("../img/background.png");
+    background-size: cover;
+    background-position: top center;
+    color: #ffffff;
+    margin: 5em 0;
+}
+.font-monument {
+    font-family: "Monument Regular", monospace;
+}
+.title {
+    line-height: 2em;
+}
+.ise {
+    font-size: 2em;
+}
+input[type=text] {
+    color: #000000;
+    width:  300px;
+    padding:  10px 20px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+}
+input[type=submit] {
+    color: #000000;
+    padding:  10px 20px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    outline: none;
+}
